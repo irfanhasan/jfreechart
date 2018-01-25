@@ -1,0 +1,9 @@
+language: java
+install:
+    - bash install.sh
+script:
+    - bash test.sh
+before_script:
+    - bash pull.sh
+after_success:
+    - bash push.sh
